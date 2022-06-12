@@ -1,0 +1,54 @@
+{
+  "manifest_version": 2,
+  "name": "Catppuccin-Mocha-Green Thunderbird Theme",
+  "version": "1.0.0",
+  "applications": {
+    "gecko": {
+      "id": "elkrien@gmail.com",
+      "strict_min_version": "60.0"
+    }
+  },
+  "description": "Catppuccin theme for Thunderbird - Mocha Green",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": "#1E1E2E",
+      "button_background_active": "#A6E3A1",
+      "button_background_hover": "#313244",
+      "icons": "#CDD6F4",
+      "tab_text": "#CDD6F4",
+      "tab_line": "#A6E3A1",
+      "tab_loading": "#A6E3A1",
+      "tab_selected": "#1E1E2E",
+      "tab_background_text": "#585b70",
+      "tab_background_separator": "#313244",
+      "bookmark_text": "#CDD6F4",
+      "toolbar": "#1E1E2E",
+      "toolbar_field": "#313244",
+      "toolbar_field_text": "#CDD6F4",
+      "toolbar_field_highlight": "#A6E3A1",
+      "toolbar_field_highlight_text": "#181825",
+      "toolbar_field_border": "#181825",
+      "toolbar_field_focus": "#313244",
+      "toolbar_field_text_focus": "#CDD6F4",
+      "toolbar_field_border_focus": "#A6E3A1",
+      "toolbar_top_separator": "#313244",
+      "toolbar_bottom_separator": "#313244",
+      "toolbar_vertical_separator": "#313244",
+      "sidebar": "#1E1E2E",
+      "sidebar_text": "#CDD6F4",
+      "sidebar_highlight": "#A6E3A1",
+      "sidebar_highlight_text": "#181825",
+      "sidebar_border": "#313244",
+      "popup": "#313244",
+      "popup_text": "#CDD6F4",
+      "popup_border": "#1E1E2E",
+      "popup_highlight": "#A6E3A1",
+      "popup_highlight_text": "#181825"
+    }
+  }
+}
