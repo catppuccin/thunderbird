@@ -11,12 +11,12 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/thunderbird/main/assets/cat-thunderbird.png"/>
+  <img src="assets/cat-thunderbird.png"/>
 </p>
 
 ## Usage
 
-1. Clone this repository.
+1. Clone this repository
 2. Open Thunderbird, go to `Menu > Add-ons and Themes`
 3. Click on the gear icon at the top-right corner and then select "Install Add-on From File..."
 4. Select a theme of choice from `themes` folder of downloaded repository, i.e. `Catppuccin-Mocha-Lavender.zip`
