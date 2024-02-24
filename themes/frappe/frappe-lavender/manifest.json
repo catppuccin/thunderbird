@@ -8,8 +8,9 @@
       "strict_min_version": "60.0"
     }
   },
-  "description": "Catppuccin theme for Thunderbird - Frappe Lavender",
+  "description": "Soothing pastel theme for Thunderbird - Frappe Lavender",
   "theme_experiment": {
+    "stylesheet": "styles.css",
     "colors": {
       "spaces_bg": "--spaces-bg-color",
       "tree_view_bg": "--tree-view-bg",

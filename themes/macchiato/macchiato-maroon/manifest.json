@@ -8,8 +8,9 @@
       "strict_min_version": "60.0"
     }
   },
-  "description": "Catppuccin theme for Thunderbird - Macchiato Maroon",
+  "description": "Soothing pastel theme for Thunderbird - Macchiato Maroon",
   "theme_experiment": {
+    "stylesheet": "styles.css",
     "colors": {
       "spaces_bg": "--spaces-bg-color",
       "tree_view_bg": "--tree-view-bg",
