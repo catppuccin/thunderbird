@@ -37,7 +37,7 @@ await Promise.all(
             strict_min_version: "60.0",
           },
         },
-        description: `Catppuccin theme for Thunderbird - ${titleCase(
+        description: `Soothing pastel theme for Thunderbird - ${titleCase(
           name
         )} ${titleCase(accent)}`,
         // TODO:
