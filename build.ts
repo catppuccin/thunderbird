@@ -49,12 +49,11 @@ async function makeThemeObject(
     description: `Soothing pastel theme for Thunderbird - ${titleCase(
       name
     )} ${titleCase(accent)}`,
-    // TODO:
-    // icons: {
-    //   "16": "images/icon16.png",
-    //   "48": "images/icon48.png",
-    //   "128": "images/icon128.png",
-    // },
+    icons: {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png",
+    },
     theme_experiment: {
       stylesheet: "styles.css",
       colors: {
@@ -116,23 +115,19 @@ async function generateVariants(
     const theme = await makeThemeObject(name, accent, palette);
     const json = JSON.stringify(theme, undefined, 2);
 
-    Deno.mkdirSync(`./themes/${name}/${name}-${accent}`, {
+    Deno.mkdirSync(`./themes/${name}`, {
       recursive: true,
     });
-
-    Deno.mkdirSync(`./zips/${name}`, {
-      recursive: true,
-    });
-
-    Deno.writeTextFileSync(
-      `./themes/${name}/${name}-${accent}/manifest.json`,
-      json
-    );
 
     const zip = new JSZip();
     zip.addFile("manifest.json", json);
 
-    await zip.writeZip(`./zips/${name}/${name}-${accent}.xpi`);
+    const images = zip.folder("images")
+    images.addFile("icon16.png", "./assets/icon16.png")
+    images.addFile("icon48.png", "./assets/icon48.png")
+    images.addFile("icon128.png", "./assets/icon128.png")
+
+    await zip.writeZip(`./themes/${name}/${name}-${accent}.xpi`);
   }
 }
 
