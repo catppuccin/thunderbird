@@ -58,6 +58,7 @@ async function makeThemeObject(
       stylesheet: "styles.css",
       colors: {
         spaces_bg: "--spaces-bg-color",
+        spaces_bg_active: "--spaces-button-active-bg-color",
         tree_view_bg: "--tree-view-bg",
         bg_color: "--bg-color",
       },
@@ -100,6 +101,7 @@ async function makeThemeObject(
         spaces_bg: palette.mantle.hex,
         tree_view_bg: palette.mantle.hex,
         bg_color: palette.base.hex,
+        spaces_bg_active: palette[accent].hex,
       },
     },
   };

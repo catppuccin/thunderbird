@@ -13,6 +13,7 @@
     "stylesheet": "styles.css",
     "colors": {
       "spaces_bg": "--spaces-bg-color",
+      "spaces_bg_active": "--spaces-button-active-bg-color",
       "tree_view_bg": "--tree-view-bg",
       "bg_color": "--bg-color"
     }
@@ -54,7 +55,8 @@
       "popup_highlight_text": "#181825",
       "spaces_bg": "#181825",
       "tree_view_bg": "#181825",
-      "bg_color": "#1e1e2e"
+      "bg_color": "#1e1e2e",
+      "spaces_bg_active": "#f5c2e7"
     }
   }
 }
