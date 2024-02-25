@@ -59,8 +59,11 @@ async function makeThemeObject(
       colors: {
         spaces_bg: "--spaces-bg-color",
         spaces_bg_active: "--spaces-button-active-bg-color",
+        spaces_button: "--spaces-button-active-text-color",
         tree_view_bg: "--tree-view-bg",
         bg_color: "--bg-color",
+        button_primary_bg: "--button-primary-background-color",
+        button_text: "--button-primary-text-color"
       },
     },
     theme: {
@@ -102,6 +105,9 @@ async function makeThemeObject(
         tree_view_bg: palette.mantle.hex,
         bg_color: palette.base.hex,
         spaces_bg_active: palette[accent].hex,
+        button_primary_bg: palette[accent].hex,
+        button_text: palette.crust.hex,
+        spaces_button: palette.crust.hex
       },
     },
   };
