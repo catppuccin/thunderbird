@@ -7,6 +7,10 @@ import {
 } from "npm:@catppuccin/palette@0.1.5";
 import { titleCase } from "https://deno.land/x/case@2.2.0/mod.ts";
 import { JSZip } from "https://deno.land/x/jszip@0.11.0/mod.ts";
+import * as uuid from "https://deno.land/std@0.207.0/uuid/mod.ts";
+
+// DON'T CHANGE THIS :OMEGALUL:
+const NAMESPACE_URL = "6da2d448-69ec-48e0-aabf-3c6379788110";
 
 const accents = [
   "rosewater",
@@ -25,19 +29,19 @@ const accents = [
   "lavender",
 ] as const;
 
-function makeThemeObject(
+async function makeThemeObject(
   name: string,
   accent: keyof Labels<Color, AlphaColor>,
   palette: Labels<Color, AlphaColor>
 ) {
+  const themeName = `catppuccin-${name}-${accent}`;
   return {
     manifest_version: 2,
-    name: `catppuccin-${name}-${accent}`,
+    name: themeName,
     version: "1.0.0",
     applications: {
       gecko: {
-        // FIXME: Make properly
-        id: `theme@catppuccinorg.com`,
+        id: `{${await uuid.v5.generate(NAMESPACE_URL, themeName)}}`,
         strict_min_version: "60.0",
       },
     },
@@ -106,7 +110,7 @@ async function generateVariants(
   palette: Labels<Color, AlphaColor>
 ) {
   for (const accent of accents) {
-    const theme = makeThemeObject(name, accent, palette);
+    const theme = await makeThemeObject(name, accent, palette);
     const json = JSON.stringify(theme, undefined, 2);
 
     Deno.mkdirSync(`./themes/${name}/${name}-${accent}`, {

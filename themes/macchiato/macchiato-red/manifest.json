@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "applications": {
     "gecko": {
-      "id": "theme@catppuccinorg.com",
+      "id": "{97911712-87de-534e-bd4f-4e3eab08e644}",
       "strict_min_version": "60.0"
     }
   },
