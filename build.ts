@@ -9,7 +9,8 @@ import { titleCase } from "https://deno.land/x/case@2.2.0/mod.ts";
 import { JSZip } from "https://deno.land/x/jszip@0.11.0/mod.ts";
 import * as uuid from "https://deno.land/std@0.207.0/uuid/mod.ts";
 
-// DON'T CHANGE THIS :OMEGALUL:
+// Allows for the UUIDs to be "seeded" and therefore reproducible
+// DO NOT CHANGE
 const NAMESPACE_URL = "6da2d448-69ec-48e0-aabf-3c6379788110";
 
 const accents = [
