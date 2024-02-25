@@ -35,13 +35,14 @@ async function makeThemeObject(
   palette: Labels<Color, AlphaColor>
 ) {
   const themeName = `catppuccin-${name}-${accent}`;
+  const encodedName = new TextEncoder().encode(themeName)
   return {
     manifest_version: 2,
     name: themeName,
     version: "1.0.0",
     applications: {
       gecko: {
-        id: `{${await uuid.v5.generate(NAMESPACE_URL, themeName)}}`,
+        id: `{${await uuid.v5.generate(NAMESPACE_URL, encodedName)}}`,
         strict_min_version: "60.0",
       },
     },
