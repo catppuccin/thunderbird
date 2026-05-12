@@ -157,6 +157,8 @@ async function generateVariants(
     const zip = new JSZip();
     zip.addFile("manifest.json", json);
 
+    zip.addFile("styles.css", await Deno.readTextFile(`./styles/styles-${name}.css`));
+
     const images = zip.folder("images")
     images.addFile("icon16.png", "./assets/icon16.png")
     images.addFile("icon48.png", "./assets/icon48.png")
