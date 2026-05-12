@@ -1,0 +1,18 @@
+:root {
+  --lwt-text-color: #4c4f69 !important;
+}
+
+/* Mini Calendar fix */
+.minimonth-calendar, .minimonth-calendar * {
+  --mmDayColor: #4c4f69 !important;
+  --mmOtherDayColor: #6c6f85 !important;
+}
+.multiday-hour-box, multiday-hour-box * {
+  --viewTimeBoxColor: #4c4f69 !important;
+}
+
+/* Search Bar fix */
+.kbd-container kbd {
+  color: #6c6f85 !important;
+}
+
