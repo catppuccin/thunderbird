@@ -11,35 +11,35 @@
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/catppuccin/thunderbird/main/assets/thunderbird.png"/>
+  <img src="assets/thunderbird.png"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/thunderbird/main/assets/thunderbird-latte.png"/>
+  <img src="assets/thunderbird-latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/thunderbird/main/assets/thunderbird-frappe.png"/>
+  <img src="assets/thunderbird-frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/thunderbird/main/assets/thunderbird-macchiato.png"/>
+  <img src="assets/thunderbird-macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-  <img src="https://raw.githubusercontent.com/catppuccin/thunderbird/main/assets/thunderbird-mocha.png"/>
+  <img src="assets/thunderbird-mocha.png"/>
 </details>
 
 
 ## Usage
 
-1. Clone this repository
-2. Open Thunderbird, go to `Settings > Add-ons and Themes`
-3. Click on the gear icon at the top-right corner and then select "Install Add-on From File..."
-4. Select a theme of choice from `themes` folder of downloaded repository, i.e. `mocha/mocha-blue.xpi`
+1. Download the flavor and accent combination of your choice from [themes](themes).
+2. Open Thunderbird and go to **Settings** > **Add-ons and Themes**
+3. Click on the gear icon at the top-right corner and then select **Install Add-on From File...**
+4. Select the downloaded flavor and accent XPI file.
 5. Enjoy!
 
 ## 💝 Thanks to
